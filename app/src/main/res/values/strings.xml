@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PetShop</string>
+    <string name="author">Armando Avila</string>
+    <string name="version">V 1.0</string>
+    <string name="info_description">Descripción</string>
+    <string name="pets">Mascotas</string>
+</resources>

@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import com.bumptech.glide.Glide
+import com.jaae.petshop.R
 import com.jaae.petshop.databinding.ActivityPetDetailBinding
 import com.jaae.petshop.model.PetDetail
 import com.jaae.petshop.network.PetsApi
@@ -64,6 +66,10 @@ class PetDetail : AppCompatActivity() {
                 }
             })
         }
+
+    }
+
+    fun sendMaps(view: View) {
 
     }
 }

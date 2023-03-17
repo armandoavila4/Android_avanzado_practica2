@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.jaae.petshop.R
 import com.jaae.petshop.databinding.ActivityMainBinding
 import com.jaae.petshop.model.Pet
 import com.jaae.petshop.network.PetsApi
@@ -67,4 +69,14 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(intent)
     }
+
+    fun clickMenu(view: View) {
+        when(view.id){
+            R.id.ivMenu ->{
+                binding.dlMain.openDrawer(GravityCompat.START)
+            }
+        }
+    }
+
+
 }

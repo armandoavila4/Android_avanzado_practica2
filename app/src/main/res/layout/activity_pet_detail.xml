@@ -87,9 +87,9 @@
                 android:layout_height="300dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
+                android:src="@drawable/ic_pets"
                 app:riv_corner_radius="10dip"
-                app:riv_oval="true"
-                android:src="@drawable/ic_pets"/>
+                app:riv_oval="true" />
 
             <TextView
                 android:id="@+id/txtSubName"
@@ -122,22 +122,22 @@
                     android:layout_height="wrap_content"
                     android:padding="20dp"
                     android:textColor="#1c2ea7"
-                    android:textSize="25sp"/>
+                    android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/txtCountry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="20dp"
                     android:layout_marginStart="30dp"
-                    android:textSize="25sp"
-                    android:gravity="left"/>
+                    android:gravity="left"
+                    android:padding="20dp"
+                    android:textSize="25sp" />
 
                 <ImageView
                     android:id="@+id/iv_flag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp"/>
+                    android:padding="10dp" />
 
             </LinearLayout>
 
@@ -146,10 +146,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
+                android:text="@string/info_description"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="@string/info_description"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtDesc"
                 android:layout_width="wrap_content"
@@ -185,5 +186,21 @@
             app:layout_anchor="@id/ivPet"
             app:layout_anchorGravity="end|bottom"
             app:tint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/iconMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:baselineAlignBottom="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_maps"
+        android:onClick="sendMaps"
+        app:backgroundTint="#8B00EF"
+        app:fabSize="normal"
+        app:layout_anchor="@id/ivPet"
+        app:layout_anchorGravity="start|top"
+        app:tint="@color/white"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

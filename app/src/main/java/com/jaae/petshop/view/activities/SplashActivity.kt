@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Se mantiene el splash screen por 4 seg
+        //Se mantiene el splash screen por 4 seg y despues envía al Login
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

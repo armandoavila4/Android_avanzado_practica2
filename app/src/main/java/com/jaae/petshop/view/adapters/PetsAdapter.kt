@@ -14,6 +14,7 @@ class PetsAdapter(private val context: Context, private val pets: ArrayList<Pet>
         val ivThumbnail = view.ivPet
         val tvNamePet = view.lbPetName
         val tvSubnamePet = view.lbPetSubname
+        val ivFlag = view.ivFlag
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -28,6 +29,10 @@ class PetsAdapter(private val context: Context, private val pets: ArrayList<Pet>
         Glide.with(context)
             .load(pets[position].thumbnail)
             .into(holder.ivThumbnail)
+
+        val id: Int = context.resources
+            .getIdentifier("flag_${pets[position].flag}", "drawable", context.getPackageName())
+        holder.ivFlag.setImageResource(id)
 
         //Para los clicks
         holder.itemView.setOnClickListener{

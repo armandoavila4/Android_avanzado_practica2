@@ -13,6 +13,9 @@ var thumbnail: String? = null,
 var name: String? = null,
 
 @SerializedName("subname")
-var subname: String? = null
+var subname: String? = null,
+
+@SerializedName("flag")
+var flag: String? = null
 
 )
